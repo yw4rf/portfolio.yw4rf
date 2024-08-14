@@ -64,7 +64,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your comment provider */
   comments: {
     disqus: {
-      shortname: "tobi",
+      shortname: "ywarf",
     },
     // giscus: {
     //   repo: 'moeyua/astro-theme-typography',
