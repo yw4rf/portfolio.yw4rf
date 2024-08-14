@@ -10,7 +10,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your locale */
   locale: "en-us",
   /** theme style */
-  themeStyle: 'light',
+  themeStyle: 'dark',
   /** your socials */
   socials: [
     {
@@ -65,7 +65,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   comments: {
      giscus: {
        repo: 'moeyua/astro-theme-typography',
-       repoId: 'R_kgDOKy9HOQ',
+       repoId: 'R_kgDOMjl5Cw',
        category: 'General',
        categoryId: 'DIC_kwDOKy9HOc4CegmW',
        mapping: 'title',
@@ -74,7 +74,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
        emitMetadata: '1',
        inputPosition: 'top',
        theme: 'light',
-       lang: 'zh-CN',
+       lang: 'en',
        loading: 'lazy',
      }
   }

@@ -37,7 +37,7 @@ declare namespace App {
       /** comments */
       comments?: {
         disqus?: Disqus,
-        giscus?: Giscus
+        giscus?: Giscus,
       }
     }
     translate: (key: string, param?: string | number) => string;
