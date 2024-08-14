@@ -1,7 +1,6 @@
 ---
 import Disqus from './Disqus.astro'
 import Giscus from './Giscus.astro'
-import Twikoo from './Twikoo.astro'
 interface Props {
   post: Post
 
@@ -18,13 +17,10 @@ if (comments && comments.disqus) {
   commentService = 'disqus'
 } else if (comments && comments.giscus) {
   commentService = 'giscus'
-} else if (comments && comments.twikoo) {
-  commentService = 'twikoo'
 }
 ---
 <div py-16>
   {commentService === 'disqus' && <Disqus identifier={id} url={url} title={data.title} />}
   {commentService === 'giscus' && <Giscus />}
-  {commentService === 'twikoo' && <Twikoo path={path} />}
   {commentService === '' && null}
 </div>

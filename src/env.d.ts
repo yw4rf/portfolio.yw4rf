@@ -37,18 +37,11 @@ declare namespace App {
       /** comments */
       comments?: {
         disqus?: Disqus,
-        giscus?: Giscus,
-        twikoo?: Twikoo
+        giscus?: Giscus
       }
     }
     translate: (key: string, param?: string | number) => string;
   }
-}
-
-interface Twikoo {
-  envId: string;
-  region?: string;
-  lang?: string;
 }
 
 interface Disqus {
