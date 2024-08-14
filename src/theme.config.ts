@@ -10,7 +10,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your locale */
   locale: "en-us",
   /** theme style */
-  themeStyle: 'dark',
+  themeStyle: 'light',
   /** your socials */
   socials: [
     {
@@ -63,20 +63,23 @@ export const THEME_CONFIG: App.Locals['config'] = {
   ],
   /** your comment provider */
   comments: {
-     giscus: {
-       repo: 'moeyua/astro-theme-typography',
-       repoId: 'R_kgDOMjl5Cw',
-       category: 'General',
-       categoryId: 'DIC_kwDOKy9HOc4CegmW',
-       mapping: 'title',
-       strict: '0',
-       reactionsEnabled: '1',
-       emitMetadata: '1',
-       inputPosition: 'top',
-       theme: 'light',
-       lang: 'en',
-       loading: 'lazy',
-     }
+    disqus: {
+      shortname: "tobi",
+    },
+    // giscus: {
+    //   repo: 'moeyua/astro-theme-typography',
+    //   repoId: 'R_kgDOKy9HOQ',
+    //   category: 'General',
+    //   categoryId: 'DIC_kwDOKy9HOc4CegmW',
+    //   mapping: 'title',
+    //   strict: '0',
+    //   reactionsEnabled: '1',
+    //   emitMetadata: '1',
+    //   inputPosition: 'top',
+    //   theme: 'light',
+    //   lang: 'zh-CN',
+    //   loading: 'lazy',
+    // }
   }
 }
 
