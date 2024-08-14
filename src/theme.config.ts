@@ -1,8 +1,8 @@
 export const THEME_CONFIG: App.Locals['config'] = {
   /** blog title */
-  title: "活版印字",
+  title: "Yw4rf",
   /** your name */
-  author: "Typography",
+  author: "tobigfioroni",
   /** website description */
   desc: "Rediscory the beauty of typography",
   /** your deployed domain */
@@ -10,24 +10,28 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your locale */
   locale: "en-us",
   /** theme style */
-  themeStyle: "light",
+  themeStyle: 'light',
   /** your socials */
   socials: [
     {
       name: "github",
-      href: "https://github.com/moeyua/astro-theme-typography",
+      href: "https://github.com/Yw4rf",
     },
     {
-      name: "rss",
-      href: "/atom.xml",
+      name: "linkedin",
+      href: "https://linkedin.com/tobigfioroni",
     },
     {
       name: "twitter",
-      href: "https://github.com/moeyua/astro-theme-typography",
+      href: "https://x.com/Yw4rf",
     },
     {
-      name: "mastodon",
-      href: "https://github.com/moeyua/astro-theme-typography",
+      name: "instagram",
+      href: "https://instagram.com/yw4rf",
+    }, 
+    {
+      name: "whatsapp",
+      href: "https://instagram.com/yw4rf",
     }
   ],
   /** your header info */
