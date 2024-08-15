@@ -49,12 +49,16 @@ export const THEME_CONFIG: App.Locals['config'] = {
       href: "/archive",
     },
     {
-      name: "Categories",
+      name: "Tags",
       href: "/categories"
     },
     {
       name: "About",
       href: "/about",
+    },
+    {
+      name: "Works",
+      href: "/works",
     },
   ],
   /** your category name mapping, which the `path` will be shown in the url */
