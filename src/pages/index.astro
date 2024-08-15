@@ -11,12 +11,11 @@ const { translate: t } = Astro.locals
 ---
 
 <LayoutDefault>
+  <div class="mt-[-20px] mb-[45px]">
+    <p class="text-[#2E405B] text-[19px] font-bold">Tobias G. Fioroni a.k.a yw4rf, is a freelance developer with 19yo based in Argentina with a deep passion for programming, hardware and cybersecurity. He is currently pursuing a degree in Cybersecurity at UNO University in Buenos Aires and is working towards obtaining the ISC2 CC certification (Certified in Cybersecurity)</p>
+  </div>
   <section contain-layout un-flex="~ col gap-7.5">
-    <h2 class="text-[#2E405B] text-[32px]">> about me</h2>
-    <div class="mt-[-10px]">
-      <p class="font-bold">Tobias G. Fioroni aka yw4rf, is a freelance developer with 19yo based in Argentina with a deep passion for programming, hardware and cybersecurity. He is currently pursuing a degree in Cybersecurity at UNO University in Buenos Aires and is working towards obtaining the ISC2 CC certification (Certified in Cybersecurity)      </p>
-    </div>
-    <h2 class="text-[#2E405B] text-[32px]">> latest posts</h2>
+    <h2 class="text-[#2E405B] text-[32px]">> Latest posts</h2>
     {
       posts.map((post) => (
         <Post post={post}>
