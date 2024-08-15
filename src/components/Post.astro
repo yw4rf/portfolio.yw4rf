@@ -24,7 +24,7 @@ function getCategoryUrl(category: string) {
       {
         post.data.categories &&
           post.data.categories.map((category) => (
-            <a class="ml-2.5" href={getCategoryUrl(category)}>
+              <a class="ml-2.5" href={getCategoryUrl(category)}>
               # {category}
             </a>
           ))
