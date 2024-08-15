@@ -10,7 +10,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your locale */
   locale: "en-us",
   /** theme style */
-  themeStyle: 'auto',
+  themeStyle: "dark",
   /** your socials */
   socials: [
     {
@@ -32,15 +32,11 @@ export const THEME_CONFIG: App.Locals['config'] = {
     {
       name: "whatsapp",
       href: "https://instagram.com/yw4rf",
-    }, 
-    {
-      name:"theme-light-dark",
-      href:"",
-    }
+    },
   ],
   /** your header info */
   header: {
-    twitter: "@moeyua13",
+    twitter: "@Yw4rf",
   },
   /** your navigation links */
   navs: [
@@ -90,4 +86,3 @@ export const THEME_CONFIG: App.Locals['config'] = {
      }
   }
 }
-

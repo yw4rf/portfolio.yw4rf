@@ -7,6 +7,7 @@ import { ViewTransitions } from 'astro:transitions';
 import { SEO } from 'astro-seo'
 import { getImage } from 'astro:assets'
 
+
 interface Props {
   title?: string
   desc?: string
@@ -72,6 +73,5 @@ const optimizedImage = new URL(image?.src??"/placeholder.png", Astro.url).toStri
       </main>
       <Footer class="lg:hidden p-7.5" />
     </div>
-    <script src="../scripts/theme-toggle.js" type="module"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@ const { ...attrs } = Astro.props
 const { title, author, socials, navs } = Astro.locals.config
 
 const { translate: t } = Astro.locals
+
 ---
 
 <header un-lg="grow-1 justify-between items-start" un-flex="~ col gap-2.5" class="text-center" {...attrs}>
@@ -41,6 +42,9 @@ const { translate: t } = Astro.locals
           </li>
         ))
       }
+      <!-- <li>
+        <a href="#" class="icon toggleTheme i-mdi-theme-light-dark" id="theme-toggle" />
+      </li> -->
     </ul>
   </nav>
 </header>
