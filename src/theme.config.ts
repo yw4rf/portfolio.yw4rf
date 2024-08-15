@@ -10,7 +10,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your locale */
   locale: "en-us",
   /** theme style */
-  themeStyle: 'light',
+  themeStyle: 'auto',
   /** your socials */
   socials: [
     {
@@ -32,6 +32,10 @@ export const THEME_CONFIG: App.Locals['config'] = {
     {
       name: "whatsapp",
       href: "https://instagram.com/yw4rf",
+    }, 
+    {
+      name:"theme-light-dark",
+      href:"",
     }
   ],
   /** your header info */

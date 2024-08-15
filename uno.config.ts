@@ -9,12 +9,12 @@ import { THEME_CONFIG } from "./src/theme.config";
 
 const {socials, themeStyle} = THEME_CONFIG;
 
-let foreground = "#fff";
-let background = "#000";
+let foreground = "#2e405b";
+let background = "#ffffff";
 
 if(THEME_CONFIG.themeStyle === 'dark') {
-  foreground = "#ffffff";
-  background = "#2e405b";
+   foreground = "#E0E0E0";
+   background = "#121212";
 }
 
 export default defineConfig({
