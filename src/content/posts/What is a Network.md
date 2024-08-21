@@ -1,5 +1,5 @@
 ---
-title: '¿What is a Network?'
+title: 'What is a Network?'
 description: 'This post is a quick guide to understanding how networks work, from basic protocols to the structures that support them.'
 pubDate: 'Aug 21 2024'
 categories: ['Networking']
