@@ -2,7 +2,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** blog title */
   title: "Yw4rf",
   /** your name */
-  author: "Tobigfioroni",
+  author: "かいぜん",
   /** website description */
   desc: "Rediscory the beauty of typography",
   /** your deployed domain */
@@ -80,7 +80,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
        reactionsEnabled: '1',
        emitMetadata: '1',
        inputPosition: 'top',
-       theme: 'light',
+       theme: 'dark',
        lang: 'en',
        loading: 'lazy',
      }
