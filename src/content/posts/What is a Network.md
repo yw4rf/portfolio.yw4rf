@@ -13,7 +13,6 @@ In the world of cybersecurity, understanding what a network is and how it functi
 
 ![Network Diagram](https://www.conceptdraw.com/How-To-Guide/picture/Network-Diagram.png)
 
-
 # Network Architecture
 The architecture of a network defines how the devices within it are connected and communicate.
 ## Network Topologies
