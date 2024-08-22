@@ -4,7 +4,6 @@ description: 'This post is a quick guide to understanding how networks work, fro
 pubDate: 'Aug 21 2024'
 categories: ['Networking']
 ---
-<br>
 
 ###### The Royal Spanish Academy (www.rae.es) defines the term as:
 
@@ -12,7 +11,7 @@ categories: ['Networking']
 
 In the world of cybersecurity, understanding what a network is and how it functions is fundamental. In general terms, a network is a collection of interconnected devices that can communicate with each other. These devices may include computers, servers, routers, switches, and other equipment.
 
-![Pasted image 20240821153204.png](URL)  
+![Pasted image 20240821153204.png](https://w7.pngwing.com/pngs/388/908/png-transparent-computer-network-electronics-engineering-organization-design-computer-network-electronics-computer.png)  
 # Network Architecture
 
 The architecture of a network defines how the devices within it are connected and communicate with each other.
