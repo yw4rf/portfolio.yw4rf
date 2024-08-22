@@ -12,6 +12,8 @@ categories: ['Networking']
 In the world of cybersecurity, understanding what a network is and how it functions is fundamental. In general terms, a network is a set of interconnected devices that can communicate with each other. These devices may include computers, servers, routers, switches, and other equipment.
 
 ![Network Diagram](https://www.conceptdraw.com/How-To-Guide/picture/Network-Diagram.png)
+
+
 # Network Architecture
 The architecture of a network defines how the devices within it are connected and communicate.
 ## Network Topologies
