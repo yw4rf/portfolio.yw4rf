@@ -47,11 +47,7 @@ Redes diseñadas para la transmisión de datos a larga distancia, incluyendo voz
 Redes utilizadas para la transmisión de datos a través de dispositivos móviles, como teléfonos y tabletas, usando tecnologías celulares.
 - **Ejemplo:** Redes celulares que proporcionan acceso a Internet móvil.
 
-<<<<<<< HEAD
 ![WAN-MAN-LAN](https://i.pinimg.com/736x/78/26/a1/7826a13009a293cd8e64da4648790d99.jpg)
-=======
-![WAN, MAN, LAN](https://nubitec.com.ar/wp-content/uploads/2016/06/tipos-de-red-1.jpg)
->>>>>>> 6dd88f88f75beb6f7606c1d834c3945c63778ac2
 
 ## Topologías de Red
 
@@ -181,18 +177,16 @@ El direccionamiento IP es fundamental en redes de computadoras, ya que permite l
 
 El subnetting, o subdivisión de redes, es una técnica utilizada para dividir una red IP en subredes más pequeñas. Esto optimiza el uso de direcciones IP y mejora la eficiencia de la red. Mediante el subnetting, se puede organizar una red grande en segmentos más manejables, facilitando la administración y aumentando la seguridad. Cada subred tiene un identificador único y puede ser configurada con un rango específico de direcciones IP, lo que permite una gestión más efectiva del tráfico de red y una mejor asignación de recursos.
 
-<<<<<<< HEAD
 ![Subnetting](https://dougvitale.wordpress.com/wp-content/uploads/2013/03/subnet1.jpg?w=584)
 
 
 
 A modo de resumen para repasar e investigar mas, un mapa conceptual de Redes en Español:
-=======
+
 ![Subnetting](https://networklessons.com/wp-content/uploads/2017/01/network-subnetting-example-class-c.png)
 
 
 
 A modo de resumen, un mapa conceptual de Redes:
->>>>>>> 6dd88f88f75beb6f7606c1d834c3945c63778ac2
 
 ![Network](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJjFaoOqPTI3NzJqXeXsGOclvkS2WoYaHUietrsf3oKdPm39sLZwlmzzFQOAEIcd6RmO_8or-VybmRd-KzcjGLHtGcj-Fv_krB6x3sfMJj0PtOgUmb7fQrRUUw1IL6ldb3L62LSjEZF2O_/s1600/tipos+de+redes+1.jpg)
