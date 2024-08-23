@@ -179,14 +179,6 @@ El subnetting, o subdivisión de redes, es una técnica utilizada para dividir u
 
 ![Subnetting](https://dougvitale.wordpress.com/wp-content/uploads/2013/03/subnet1.jpg?w=584)
 
-
-
 A modo de resumen para repasar e investigar mas, un mapa conceptual de Redes en Español:
-
-![Subnetting](https://networklessons.com/wp-content/uploads/2017/01/network-subnetting-example-class-c.png)
-
-
-
-A modo de resumen, un mapa conceptual de Redes:
 
 ![Network](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJjFaoOqPTI3NzJqXeXsGOclvkS2WoYaHUietrsf3oKdPm39sLZwlmzzFQOAEIcd6RmO_8or-VybmRd-KzcjGLHtGcj-Fv_krB6x3sfMJj0PtOgUmb7fQrRUUw1IL6ldb3L62LSjEZF2O_/s1600/tipos+de+redes+1.jpg)
