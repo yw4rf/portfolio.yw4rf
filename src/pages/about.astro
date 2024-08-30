@@ -1,7 +1,36 @@
 ---
-import LayoutDefault from "~/layouts/LayoutDefault.astro"
+import LayoutDefault from "~/layouts/LayoutDefault.astro";
+import KnowLanguages from "~/components/KnowLanguages.astro";
+import KnowFrameworksLibraries from "~/components/KnowFrameworksLibraries.astro";
+import KnowTools from "~/components/KnowTools.astro";
+import CTF from "~/components/ctf.astro";
 ---
 
 <LayoutDefault>
-  
+    <section class="">
+        <div class="flex flex-col md:flex-row">
+            <div class="flex-shrink-0 mb-4 md:mb-0">
+                <img
+                    src="../../public/profile.jpg"
+                    alt="Imagen"
+                    class="w-full md:w-[450px] h-auto object-cover"
+                />
+            </div>
+            <div class="md:ml-6">
+                <p class="text-[18px] font-normal leading-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consectetur quo labore quaerat minus vitae nam, quasi
+                    distinctio, dolores cum id temporibus, eaque mollitia.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <CTF />
+    </section>    
+    <section class="">
+        <KnowLanguages />
+        <KnowFrameworksLibraries />
+        <KnowTools />
+    </section>
 </LayoutDefault>

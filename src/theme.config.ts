@@ -1,12 +1,12 @@
 export const THEME_CONFIG: App.Locals['config'] = {
   /** blog title */
-  title: "Yw4rf",
+  title: "大胆に始めよ",
   /** your name */
-  author: "かいぜん",
+  author: "Yw4rf",
   /** website description */
-  desc: "Rediscory the beauty of typography",
+  desc: "Hi, I'm Yw4rf a Pentester, Ethical Hacker and Web Developer based in Argentina",
   /** your deployed domain */
-  website: "https://astro-theme-typography.vercel.app/",
+  website: "https://yw4rf.vercel.app",
   /** your locale */
   locale: "en-us",
   /** theme style */
@@ -41,6 +41,14 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your navigation links */
   navs: [
     {
+      name: "Works",
+      href: "/works",
+    },
+    {
+      name: "About",
+      href: "/about",
+    },
+    {
       name: "Posts",
       href: "/posts/page/1",
     },
@@ -51,14 +59,6 @@ export const THEME_CONFIG: App.Locals['config'] = {
     {
       name: "Tags",
       href: "/categories"
-    },
-    {
-      name: "About",
-      href: "/about",
-    },
-    {
-      name: "Works",
-      href: "/works",
     },
   ],
   /** your category name mapping, which the `path` will be shown in the url */
