@@ -1,8 +1,6 @@
 ---
 import LayoutDefault from "~/layouts/LayoutDefault.astro";
-import KnowLanguages from "~/components/KnowLanguages.astro";
-import KnowFrameworksLibraries from "~/components/KnowFrameworksLibraries.astro";
-import KnowTools from "~/components/KnowTools.astro";
+import Skills from "~/components/Skills.astro";
 import CTF from "~/components/ctf.astro";
 ---
 
@@ -17,6 +15,9 @@ import CTF from "~/components/ctf.astro";
                 />
             </div>
             <div class="md:ml-6">
+                <h2 class="text-xl sm:text-2xl font-semibold mb-4">
+                    WHO AM I
+                </h2>
                 <p class="text-[18px] font-normal leading-6">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Consectetur quo labore quaerat minus vitae nam, quasi
@@ -29,8 +30,6 @@ import CTF from "~/components/ctf.astro";
         <CTF />
     </section>    
     <section class="">
-        <KnowLanguages />
-        <KnowFrameworksLibraries />
-        <KnowTools />
+        <Skills />
     </section>
 </LayoutDefault>

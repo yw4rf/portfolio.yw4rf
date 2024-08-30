@@ -41,12 +41,12 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your navigation links */
   navs: [
     {
-      name: "Works",
-      href: "/works",
-    },
-    {
       name: "About",
       href: "/about",
+    },
+    {
+      name: "Works",
+      href: "/works",
     },
     {
       name: "Posts",
