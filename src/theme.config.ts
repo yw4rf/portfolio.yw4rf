@@ -22,16 +22,12 @@ export const THEME_CONFIG: App.Locals['config'] = {
       href: "https://linkedin.com/tobigfioroni",
     },
     {
-      name: "twitter",
-      href: "https://x.com/Yw4rf",
-    },
-    {
       name: "instagram",
       href: "https://instagram.com/yw4rf",
     }, 
     {
       name: "whatsapp",
-      href: "https://instagram.com/yw4rf",
+      href: "https://wa.me/+5491128477145",
     },
   ],
   /** your header info */
