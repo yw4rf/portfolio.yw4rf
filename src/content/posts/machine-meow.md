@@ -3,7 +3,7 @@ title: 'Meow HTB'
 description: 'The Meow machine is one of the entry-level penetration tests at HTB, designed to help cybersecurity professionals and enthusiasts become familiar with common exploitation and privilege escalation techniques in a controlled environment.'
 pubDate: 'Sep 4 2024'
 categories: ['WriteUp']
-
+    
 ---
 
 ## Introduction
