@@ -1,9 +1,9 @@
 ---
-title: 'Meow HTB'
-description: 'The Meow machine is one of the entry-level penetration tests at HTB, designed to help cybersecurity professionals and enthusiasts become familiar with common exploitation and privilege escalation techniques in a controlled environment.'
+title: 'Meow - HTB'
+description: 'The Meow machine from Hack The Box introduces us to many basic concepts and tools used in ethical hacking. In this challenge, we will use commands like ping, nmap, telnet, and more with the goal of gaining access and escalating privileges from the initial enumeration to obtaining the final flag.'
 pubDate: 'Sep 3 2024'
-categories: ['WriteUp']
----
+categories: ['WriteUp', 'HackTheBox', 'VeryEasy', 'CTF']
+--- 
 
 ## Introduction
 
