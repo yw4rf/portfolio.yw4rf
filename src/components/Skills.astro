@@ -1,3 +1,8 @@
+---
+import image from "astro:assets";
+import obsidianImage from "../../public/images/Obsidian.png";
+---
+
 <div class="bg-[#4242421a] mt-16 pb-[7px] pt-[40px] rounded-[8px] px-[6px]">
     <h2 class="text-xl sm:text-2xl font-semibold mb-5 absolute mt-[-55px]">☕ Skill set</h2>
     <div class="">
@@ -5,7 +10,7 @@
             <li class="text-xs mr-2">
                 <span class="flex gap-x-2 py-1 px-2 sm:px-2"
                     ><svg
-                        class="size-4"
+                        class="size-4"  
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 452 520"
                     >
@@ -226,7 +231,7 @@ VS CODE</span
             >
         </li>
         <li class="text-xs mr-2">
-            <span class="flex gap-x-2 py-1 px-2 sm:px-2"><img src="../../public/2023_Obsidian_logo.svg.png" class="size-4" alt="Obsidian-logo"> OBSIDIAN</span>
+            <span class="flex gap-x-2 py-1 px-2 sm:px-2"><img src={obsidianImage} class="size-4" alt="Obsidian-logo"> OBSIDIAN</span>
         </li>
         </ul>
     </div>

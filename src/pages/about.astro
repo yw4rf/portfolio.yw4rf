@@ -2,14 +2,16 @@
 import LayoutDefault from "~/layouts/LayoutDefault.astro";
 import Skills from "~/components/Skills.astro";
 import CTF from "~/components/ctf.astro";
+
+import profileImg from "../../public/images/profile.jpg";
+
 ---
 
 <LayoutDefault>
     <section class="">
         <div class="flex flex-col md:flex-row">
             <div class="flex-shrink-0 mb-4 md:mb-0">
-                <img
-                    src="../../public/profile.jpg"
+                <img src={profileImg}
                     alt="Imagen"
                     class="w-full md:w-[450px] h-auto object-cover"
                 />
