@@ -1,13 +1,13 @@
 ---
 title: 'Meow - HTB'
-description: 'In this walkthrough, we will use Nmap to scan ports to identify open ports and services, focusing on Telnet on port 23. We will enumerate, perform brute force attacks, and unload the flag. This guide covers the technical steps for each phase of the process.'
+description: "In this walkthrough, we use ping to verify the target's connectivity, followed by an Nmap scan that reveals an open Telnet port 23. After logging in as root without a password, we retrieve the flag.txt file, completing the challenge"
 pubDate: 'Sep 3 2024'
 categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
 ## Introduction
 
-In this walkthrough, we will use Nmap to scan ports to identify open ports and services, focusing on Telnet on port 23. We will enumerate, perform brute force attacks, and unload the flag. This guide covers the technical steps for each phase of the process.
+In this walkthrough, we will use Nmap to scan ports to identify open ports and services, focusing on Telnet on port 23. We will enumerate, perform brute force attacks, and unload the flag.
 
 
 ```

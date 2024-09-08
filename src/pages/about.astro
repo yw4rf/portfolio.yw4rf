@@ -1,10 +1,13 @@
 ---
 import LayoutDefault from "~/layouts/LayoutDefault.astro";
-import Skills from "~/components/Skills.astro";
-import CTF from "~/components/ctf.astro";
 
 import {Image} from "astro:assets";
 import profileImg from "../assets/images/profile.jpg";
+
+
+import Projects from "~/components/Projects.astro";
+import CTF from "~/components/ctf.astro";
+import Skills from "~/components/Skills.astro";
 
 ---
 
@@ -14,20 +17,21 @@ import profileImg from "../assets/images/profile.jpg";
             <div class="flex-shrink-0 mb-4 md:mb-0">
                 <Image src={profileImg}
                     alt="Imagen"
-                    class="w-full md:w-[450px] h-auto object-cover"
+                    class="w-full md:w-[450px] h-auto object-cover rounded-[8px]"
                 />
             </div>
             <div class="md:ml-6">
-                <h2 class="text-xl sm:text-2xl font-semibold mb-4">WHO AM I</h2>
+                <h2 class="text-xl sm:text-2xl font-semibold mb-4">yw4rf@yw4rf:~$ whoami</h2>
                 <p class="text-[18px] font-normal leading-6">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Consectetur quo labore quaerat minus vitae nam, quasi
                     distinctio, dolores cum id temporibus, eaque mollitia.
                 </p>
-
-                <a href="">🏅 Badges</a>
             </div>
         </div>
+    </section>
+    <section class="">
+        <Projects />
     </section>
     <section class="">
         <CTF />
