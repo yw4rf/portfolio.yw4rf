@@ -1,13 +1,13 @@
 ---
 title: 'Meow - HTB'
-description: 'The Meow machine from Hack The Box introduces us to many basic concepts and tools used in ethical hacking. In this challenge, we will use commands like ping, nmap, telnet, and more with the goal of gaining access and escalating privileges from the initial enumeration to obtaining the final flag.'
+description: 'In this walkthrough, we will use Nmap to scan ports to identify open ports and services, focusing on Telnet on port 23. We will enumerate, perform brute force attacks, and unload the flag. This guide covers the technical steps for each phase of the process.'
 pubDate: 'Sep 3 2024'
-categories: ['WriteUp', 'HackTheBox', 'VeryEasy', 'CTF']
+categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
 ## Introduction
 
-The **Meow** machine from Hack The Box introduces us to many basic concepts and tools used in ethical hacking. In this challenge, we will use commands like ping, nmap, telnet, and more with the goal of gaining access and escalating privileges—from the initial enumeration to obtaining the final flag.
+In this walkthrough, we will use Nmap to scan ports to identify open ports and services, focusing on Telnet on port 23. We will enumerate, perform brute force attacks, and unload the flag. This guide covers the technical steps for each phase of the process.
 
 
 ```
@@ -15,24 +15,26 @@ Platform: Hack The Box
 Level: Very Easy
 ```
 
-![Ping command](../../assets/meow-6.png)
+![Ping command](../../../assets/HTB/Meow/meow-6.png)
 
 
 ## Enumeration
-
-`IP: 10.129.48.113`
+```
+target: 10.129.48.113  
+```
+<br>
 
 Initially, we use the `Ping` command. This utilizes the **ICMP (Internet Control Message Protocol)**. Specifically, `Ping` sends an ICMP "echo request" message to an `IP address` and expects to receive an "echo reply" message in response. This process allows us to verify if a machine on the network is accessible and measure the time it takes to receive a response (known as latency).
 
 `ping -c 1 10.129.48.113`
 
-![Ping command](../../assets/meow-1.png)
+![Ping command](../../../assets/HTB/Meow/meow-1.png)
 
 Since the packet was received from the target computer, we can confirm that it is operational.
 
 Next, an Nmap (Network Mapper) scan is performed to enumerate all open TCP ports on the target machine in detail.
 
-![Nmap command](../../assets/meow-2.png)
+![Nmap command](../../../assets/HTB/Meow/meow-2.png)
 
 `sudo nmap -p- --open -sV --min-rate 5000 -n -Pn -vvv 10.129.48.113 -oG meow-scan`
 
@@ -69,19 +71,24 @@ One of Telnet's most significant disadvantages is that it does not encrypt trans
 
 Using the `Telnet` command and specifying the target `IP Address`, we can log into the machine and perform a brute force attack.
 
-![Brute force attack telnet](../../assets/meow-3.png)
+![Brute force attack telnet](../../../assets/HTB/Meow/meow-3.png)
 
 After trying several login usernames, such as `admin`, `administrator`, we were granted access without a password using the login name `root`.
 
 `Meow login: root`
 
-![Root telnet](../../assets/meow-4.png)
+![Root telnet](../../../assets/HTB/Meow/meow-4.png)
 
 Once we have gained root access on the target machine, we have full control of it.
 
 With the `ls` command, we check the contents of the current directory, where we see the `flag.txt` file, which is the final step to complete the machine. Using the `cat flag.txt` command, we view the contents of the file and obtain the flag.
 
-![Flag captured meow machine](../../assets/meow-5.png)
+![Flag captured meow machine](../../../assets/HTB/Meow/meow-5.png)
 
-Once the flag is captured, the CTF machine is complete. Congratulations!
+<br>
 
+Una vez tenemos la flag capturada, **hemos completado la maquina Fawn**.
+![Flag captured meow machine](../../../assets/HTB/Meow/meow-7.png)
+
+
+<br>
