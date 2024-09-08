@@ -1,6 +1,7 @@
 ---
-import image from "astro:assets";
-import obsidianImage from "../../public/images/Obsidian.png";
+import {Image} from 'astro:assets';
+
+import obsidianImage from "../assets/images/Obsidian.png";
 ---
 
 <div class="bg-[#4242421a] mt-16 pb-[7px] pt-[40px] rounded-[8px] px-[6px]">
@@ -231,7 +232,7 @@ VS CODE</span
             >
         </li>
         <li class="text-xs mr-2">
-            <span class="flex gap-x-2 py-1 px-2 sm:px-2"><img src={obsidianImage} class="size-4" alt="Obsidian-logo"> OBSIDIAN</span>
+            <span class="flex gap-x-2 py-1 px-2 sm:px-2"><Image src={obsidianImage} class="size-4" alt="Obsidian-logo" /> OBSIDIAN</span>
         </li>
         </ul>
     </div>
