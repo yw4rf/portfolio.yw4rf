@@ -1,0 +1,89 @@
+---
+import LayoutDefault from "~/layouts/LayoutDefault.astro";
+
+import { Image } from "astro:assets";
+import soloLearnHTML from "../assets/badges-certs/htmlce64a061-813c-4258-b87e-67aa16f4d661.png";
+import soloLearnCSS from "../assets/badges-certs/css1a3b97ea-0560-42ce-ab89-0dce4715d96e.png";
+import CEHPC from "../assets/badges-certs/ethhack9EI5Z2MB4l.jpeg";
+
+---
+
+<LayoutDefault>
+    <div class="bg-[#4242421a] pb-[7px] pt-[40px] rounded-[8px] px-[6px]">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-5 absolute mt-[-55px]">
+            🎖️ Badges
+        </h2>
+        <div class="ml-4">
+            <div class="flex flex-wrap gap-x-6">
+                <div
+                    data-iframe-width="150"
+                    data-iframe-height="270"
+                    data-share-badge-id="96e0b6f5-399c-4859-a74f-7edb83c3b675"
+                    data-share-badge-host="https://www.credly.com"
+                >
+                </div><script
+                    type="text/javascript"
+                    async
+                    src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div
+                    data-iframe-width="150"
+                    data-iframe-height="270"
+                    data-share-badge-id="40fd2071-8fc5-4195-8a95-357354e4bec4"
+                    data-share-badge-host="https://www.credly.com"
+                >
+                </div><script
+                    type="text/javascript"
+                    async
+                    src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            </div>
+            <div class="mb-4">
+                <a class="text-[#333333]" href="https://www.credly.com/users/yw4rf" target="_blank"
+                    >Creadly account</a
+                >
+            </div>
+        </div>
+    </div>
+    <section class="mb-9">
+        <div
+            class="bg-[#4242421a] mt-16 pb-[7px] pt-[40px] rounded-[8px] px-[6px]"
+        >
+            <h2
+                class="text-xl sm:text-2xl font-semibold mb-5 absolute mt-[-55px]"
+            >
+                🎓 Certifications
+            </h2>
+            <div class="flex flex-wrap gap-x-6 gap-y-4">
+                <div class="ml-4">
+                    <Image
+                        src={CEHPC}
+                        alt="CEHPC"
+                        class="w-[300px]"
+                    />
+                <a class="text-[#333333]"
+                    href="https://verify.academia-ciberseguridad.com/9EI5Z2MB4l"
+                    target="_blank">verify certification</a>
+            </div>
+            <div class="ml-4">
+                <Image
+                    src={soloLearnHTML}
+                    alt="soloLearnHTML"
+                    class="w-[300px]"
+                />
+            <a class="text-[#333333]"
+                href="https://www.sololearn.com/certificates/CT-EA0MVRWE"
+                target="_blank">verify certification</a>
+        </div>
+        <div class="ml-4">
+            <Image
+                src={soloLearnCSS}
+                alt="soloLearnCSS"
+                class="w-[300px]"
+            />
+        <a class="text-[#333333]"
+            href="https://www.sololearn.com/certificates/CT-FG96JGJ2"
+            target="_blank">verify certification</a>
+    </div>
+            </div>
+        </div>
+    </section></LayoutDefault
+>

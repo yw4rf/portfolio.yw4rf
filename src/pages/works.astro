@@ -1,7 +1,11 @@
 ---
-import LayoutDefault from "~/layouts/LayoutDefault.astro"
+import LayoutDefault from "~/layouts/LayoutDefault.astro";
+
+import { Image } from "astro:assets";
+import GIF from "../assets/images/200w.gif";
 ---
 
 <LayoutDefault>
-  
+        <Image src={GIF} alt="GIF There's nothing up here" class="w-[700px]" />
+        <h1 class="text-[90px] mt-90">YET</h1>
 </LayoutDefault>
