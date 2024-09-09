@@ -1,6 +1,6 @@
 ---
 title: 'Meow - HTB'
-description: "In this walkthrough, we use ping to verify the target's connectivity, followed by an Nmap scan that reveals an open Telnet port 23. After logging in as root without a password, we retrieve the flag.txt file, completing the challenge"
+description: "In this walkthrough we will learn how to connect to a misconfigured Telnet after a port scan with Nmap using brute force through weak credentials, thus obtaining the flag."
 pubDate: 'Sep 3 2024'
 categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
