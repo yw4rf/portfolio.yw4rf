@@ -4,3 +4,5 @@ Portfolio/blog where I talk a little about myself, upload things that interest m
 
 The theme was created by **Moeyua**.
 Repo link: https://github.com/moeyua/astro-theme-typhograpy
+
+![typograph-og](https://github.com/user-attachments/assets/f856b2af-5bb7-4f98-b78e-44fb650ee09e)
