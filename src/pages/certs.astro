@@ -13,8 +13,8 @@ import CiscoIC from "../assets/badges-certs/cisco-cert-intr-cybersec-yw4rf.png";
         <h2 class="text-xl sm:text-2xl font-semibold mb-5 absolute mt-[-55px]">
             🎖️ Badges
         </h2>
-        <div class="ml-4">
-            <div class="flex flex-wrap gap-x-6 gap-y-4">
+        <div class="">
+            <div class="ml-4 flex flex-wrap gap-x-6 gap-y-6 cards-style">
                 <div
                     data-iframe-width="120"
                     data-iframe-height="215"
@@ -47,13 +47,21 @@ import CiscoIC from "../assets/badges-certs/cisco-cert-intr-cybersec-yw4rf.png";
                     async
                     src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
-            <div class="mb-4 mt-9">
+            <div class="mb-4 mt-9 ml-3.5 cards-text">
                 <a
                     class="text-[#333333]"
                     href="https://www.credly.com/users/yw4rf"
                     target="_blank">Creadly account</a
                 >
             </div>
+            <style>
+                @media (max-width: 500px) {
+                    .cards-style {
+                        justify-content: center;
+                        margin-left: 0;
+                    }
+                }
+            </style>
         </div>
     </div>
     <section class="mb-9">
@@ -65,7 +73,7 @@ import CiscoIC from "../assets/badges-certs/cisco-cert-intr-cybersec-yw4rf.png";
             >
                 🎓 Certifications
             </h2>
-            <div class="flex flex-wrap gap-x-6 gap-y-4">
+            <div class="flex flex-wrap gap-x-6 gap-y-6 cert-style">
                 <div class="ml-4">
                     <Image
                         src={CEHPC}
@@ -98,6 +106,16 @@ import CiscoIC from "../assets/badges-certs/cisco-cert-intr-cybersec-yw4rf.png";
                         onclick="window.open('https://www.sololearn.com/certificates/CT-FG96JGJ2', '_blank')"
                     />
                 </div>
+                <style>
+                    @media (max-width: 500px) {
+                    .cert-style div{
+                        justify-content: center;
+                        margin-left: 0;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+                </style>
             </div>
         </div>
     </section></LayoutDefault
