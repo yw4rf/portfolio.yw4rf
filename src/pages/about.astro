@@ -13,12 +13,12 @@ import Badges from "~/components/Badges.astro";
 ---
 
 <LayoutDefault>
-    <section class="">
+    <section>
         <div class="flex flex-col md:flex-row">
             <div class="flex-shrink-0 mb-4 md:mb-0">
                 <Image src={profileImg}
                     alt="Imagen"
-                    class="w-full md:w-[450px] h-auto object-cover rounded-[8px]"
+                    class="w-full md:w-[450px] h-auto object-cover"
                 />
             </div>
             <div class="md:ml-6">
@@ -31,16 +31,8 @@ import Badges from "~/components/Badges.astro";
             </div>
         </div>
     </section>
-    <section class="">
         <CTF />
-    </section>
-    <section class="">
         <Skills />
-    </section>
-    <section class="">
         <Projects />
-    </section>
-    <section class="">
         <Badges />
-    </section>
 </LayoutDefault>
