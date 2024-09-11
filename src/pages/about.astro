@@ -1,38 +1,46 @@
 ---
 import LayoutDefault from "~/layouts/LayoutDefault.astro";
 
-import {Image} from "astro:assets";
+import { Image } from "astro:assets";
 import profileImg from "../assets/images/profile.jpg";
-
 
 import Projects from "~/components/Projects.astro";
 import CTF from "~/components/CTF.astro";
 import Skills from "~/components/Skills.astro";
 import Badges from "~/components/Badges.astro";
-
 ---
 
 <LayoutDefault>
-    <section>
+    <CTF />
+    <Skills />
+    <Projects />
+    <Badges />
+    <section class="mt-21">
         <div class="flex flex-col md:flex-row">
             <div class="flex-shrink-0 mb-4 md:mb-0">
-                <Image src={profileImg}
+                <Image
+                    src={profileImg}
                     alt="Imagen"
                     class="w-full md:w-[450px] h-auto object-cover"
                 />
             </div>
             <div class="md:ml-6">
-                <h2 class="text-xl sm:text-2xl font-semibold mb-4">WHO AM I</h2>
                 <p class="text-[18px] font-normal leading-6">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consectetur quo labore quaerat minus vitae nam, quasi
-                    distinctio, dolores cum id temporibus, eaque mollitia.
+                    Hello! I'm Tobias, a 19-year-old cybersecurity enthusiast
+                    from Buenos Aires.
+                    <br /><br />
+                    I've always been passionate about technology, which led me to
+                    pursue a Technical Degree in Computer Networks at Universidad
+                    Nacional del Oeste (UNO).
+                    <br /><br />
+                    Over the past four years, I’ve worked on various web development
+                    projects as a freelancer, and recently, I discovered a strong
+                    interest in cybersecurity, particularly penetration testing.
+                    <br /><br />
+                    I'm excited to continue learning and growing in this field, while
+                    contributing to the cybersecurity community.
                 </p>
             </div>
         </div>
     </section>
-        <CTF />
-        <Skills />
-        <Projects />
-        <Badges />
 </LayoutDefault>
