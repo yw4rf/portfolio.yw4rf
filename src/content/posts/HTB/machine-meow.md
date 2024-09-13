@@ -1,14 +1,13 @@
 ---
 title: 'Meow - HTB'
-description: "In this walkthrough we will learn how to connect to a misconfigured Telnet after a port scan with Nmap using brute force through weak credentials, thus obtaining the flag."
+description: "En este write-up, utilizaremos Nmap para escanear puertos e identificar puertos abiertos y servicios, enfocándonos en Telnet en el puerto 23. Enumeraremos, realizaremos ataques de fuerza bruta y descargaremos la flag."
 pubDate: 'Sep 3 2024'
 categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
-## Introduction
+## Introducción
 
-In this walkthrough, we will use Nmap to scan ports to identify open ports and services, focusing on Telnet on port 23. We will enumerate, perform brute force attacks, and unload the flag.
-
+En este write-up, utilizaremos Nmap para escanear puertos e identificar puertos abiertos y servicios, enfocándonos en Telnet en el puerto 23. Enumeraremos, haremos uso de credenciales debiles y descargaremos la flag.
 
 ```
 Platform: Hack The Box
@@ -18,77 +17,78 @@ Level: Very Easy
 ![Ping command](../../../assets/HTB/Meow/meow-6.png)
 
 
-## Enumeration
+## Enumeración
 ```
 target: 10.129.48.113  
 ```
 <br>
 
-Initially, we use the `Ping` command. This utilizes the **ICMP (Internet Control Message Protocol)**. Specifically, `Ping` sends an ICMP "echo request" message to an `IP address` and expects to receive an "echo reply" message in response. This process allows us to verify if a machine on the network is accessible and measure the time it takes to receive a response (known as latency).
+Inicialmente, usamos el comando `Ping`. Este utiliza el **ICMP (Protocolo de Control de Mensajes de Internet)**. Específicamente, `Ping` envía un mensaje de "solicitud de eco" a una `dirección IP` y espera recibir un mensaje de "respuesta de eco" en respuesta. Este proceso nos permite verificar si una máquina en la red es accesible y medir el tiempo que tarda en recibir una respuesta (conocido como latencia).
 
 `ping -c 1 10.129.48.113`
 
-![Ping command](../../../assets/HTB/Meow/meow-1.png)
+![Comando Ping](../../../assets/HTB/Meow/meow-1.png)
 
-Since the packet was received from the target computer, we can confirm that it is operational.
+Dado que el paquete fue recibido desde la computadora objetivo, podemos confirmar que está operativo.
 
-Next, an Nmap (Network Mapper) scan is performed to enumerate all open TCP ports on the target machine in detail.
+A continuación, se realiza un escaneo con Nmap (Network Mapper) para enumerar todos los puertos TCP abiertos en la máquina objetivo en detalle.
 
-![Nmap command](../../../assets/HTB/Meow/meow-2.png)
+![Comando Nmap](../../../assets/HTB/Meow/meow-2.png)
 
 `sudo nmap -p- --open -sV --min-rate 5000 -n -Pn -vvv 10.129.48.113 -oG meow-scan`
 
+
 ```
-- Nmap: Network scanning tool.
+Nmap: Herramienta de escaneo de redes.
 
-- -p-: Instructs Nmap to scan all available ports, from 1 to 65535.
+-p-: Indica a Nmap que escanee todos los puertos disponibles, del 1 al 65535.
 
-- --open: Filters Nmap results to show only open ports.
+--open: Filtra los resultados de Nmap para mostrar solo los puertos abiertos.
 
-- -sV: Enables service detection. Nmap will attempt to identify the versions running on the open ports.
+-sV: Habilita la detección de servicios. Nmap intentará identificar las versiones que se ejecutan en los puertos abiertos.
 
-- --min-rate 5000: Sets a minimum rate of 5000 packets per second to speed up the scan.
+--min-rate 5000: Establece una tasa mínima de 5000 paquetes por segundo para acelerar el escaneo.
 
-- -n: Avoids DNS resolution. Nmap will not try to convert IP addresses into domain names, which can make the scan faster.
+-n: Evita la resolución DNS. Nmap no intentará convertir las direcciones IP en nombres de dominio, lo que puede hacer que el escaneo sea más rápido.
 
-- -Pn: Disables the initial host discovery ("ping scan") and treats all hosts as if they are active.
+-Pn: Desactiva el descubrimiento inicial de hosts ("escaneo de ping") y trata a todos los hosts como si estuvieran activos.
 
-- 10.129.48.113: Specifies the IP address of the target to scan.
+10.129.48.113: Especifica la dirección IP del objetivo a escanear.
 
-- -Og meow-scan: Indicates that the scan results should be saved in a "grepable" format (easy to filter or search with commands like grep). The resulting file will be named meow-scan.
+-oG meow-scan: Indica que los resultados del escaneo deben guardarse en un formato "grepable" (fácil de filtrar o buscar con comandos como grep). El archivo resultante se llamará meow-scan.
 ```
 <br>
 
-We can see that it found the `port 23/tcp` is open, indicating that the service is `Telnet` with the version `Linux telnetd`.
+Podemos ver que encontró que el `puerto 23/tcp` está abierto, indicando que el servicio es `Telnet` con la versión `Linux telnetd`.
 
-`PORT   STATE  SERVICE REASON           VERSION 23/tcp open   telnet? syn-ack ttl 63   Linux telnetd`
+`PUERTO ESTADO SERVICIO RAZÓN VERSIÓN 23/tcp abierto telnet? syn-ack ttl 63 Linux telnetd`
 
 ## Telnet
 
-With a quick search on `Google`, we can see that `Telnet` is a network protocol that allows us to access another machine to remotely manage it as if we were sitting in front of it. It generally uses port 23 and the TCP protocol for data transmission.
+Con una rápida búsqueda en `Google`, podemos ver que `Telnet` es un protocolo de red que nos permite acceder a otra máquina para administrarla de forma remota como si estuviéramos sentados frente a ella. Generalmente usa el puerto 23 y el protocolo TCP para la transmisión de datos.
 
-One of Telnet's most significant disadvantages is that it does not encrypt transmitted data, including credentials (username and password), making communications vulnerable to "man-in-the-middle" attacks and other forms of eavesdropping.
+Una de las principales desventajas de Telnet es que no cifra los datos transmitidos, incluyendo las credenciales (nombre de usuario y contraseña), lo que hace que las comunicaciones sean vulnerables a ataques de "hombre en el medio" y otras formas de interceptación.
 
-Using the `Telnet` command and specifying the target `IP Address`, we can log into the machine and perform a brute force attack.
+Usando el comando `Telnet` y especificando la `Dirección IP del objetivo`, podemos iniciar sesión en la máquina y realizar un ataque de fuerza bruta.
 
-![Brute force attack telnet](../../../assets/HTB/Meow/meow-3.png)
+![Ataque de fuerza bruta Telnet](../../../assets/HTB/Meow/meow-3.png)
 
-After trying several login usernames, such as `admin`, `administrator`, we were granted access without a password using the login name `root`.
+Después de intentar varios nombres de usuario, como `admin`, `administrator`, se nos concedió acceso sin contraseña utilizando el nombre de usuario `root`.
 
 `Meow login: root`
 
-![Root telnet](../../../assets/HTB/Meow/meow-4.png)
+![Root Telnet](../../../assets/HTB/Meow/meow-4.png)
 
-Once we have gained root access on the target machine, we have full control of it.
+Una vez que hemos obtenido acceso root en la máquina objetivo, tenemos control total sobre ella.
 
-With the `ls` command, we check the contents of the current directory, where we see the `flag.txt` file, which is the final step to complete the machine. Using the `cat flag.txt` command, we view the contents of the file and obtain the flag.
+Con el comando `ls`, verificamos el contenido del directorio actual, donde vemos el archivo `flag.txt`, que es el paso final para completar la máquina. Usando el comando `cat flag.txt`, visualizamos el contenido del archivo y obtenemos la flag.
 
-![Flag captured meow machine](../../../assets/HTB/Meow/meow-5.png)
+![Flag capturada máquina Meow](../../../assets/HTB/Meow/meow-5.png)
 
 <br>
 
-Una vez tenemos la flag capturada, **hemos completado la maquina Fawn**.
-![Flag captured meow machine](../../../assets/HTB/Meow/meow-7.png)
+Una vez capturada la flag, **hemos completado la máquina Meow**.
 
+![Flag capturada máquina Meow](../../../assets/HTB/Meow/meow-7.png)
 
 <br>

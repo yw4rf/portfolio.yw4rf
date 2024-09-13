@@ -1,79 +1,78 @@
 ---
 title: 'Fawn - HTB'
-description: "In this walkthrough, we use Nmap for port scanning to identify open ports and services, focusing on FTP on port 21. We'll enumerate the FTP service, exploit anonymous login, and download the flag."
+description: "En este write-up, usaremos Nmap para identificar puertos abiertos y servicios, enfocándonos en FTP en el puerto 21. Vamos a enumerar el servicio FTP, explotar el inicio de sesión anónimo y descargar la flag."
 pubDate: 'Sep 4 2024'
 categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
 
 
-## Introduction 
+## Introduction
 
-In this walkthrough, we'll use Nmap for port scanning to identify open ports and services, focusing on FTP on port 21. We'll enumerate the FTP service, exploit anonymous login, and download the flag.
+En este write-up, usaremos Nmap para identificar puertos abiertos y servicios, enfocándonos en FTP en el puerto 21. Vamos a enumerar el servicio FTP, explotaremos el inicio de sesión anónimo y descargaremos la flag.
+
 ```
 Platform: Hack The Box
 Level: Very Easy 
 ```
 
-
 ![Fawn machine complete yw4rf](../../../assets/HTB/Fawn/0-Fawn.png)
 
-## Enumeration
+## Enumeración
 
 ```
 target: 10.129.97.198  
 ```
 <br>
 
-First, we use the command `ping -c 1 10.129.97.198` to check connectivity. 
+Primero, usamos el comando `ping -c 1 10.129.97.198` para comprobar la conectividad.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/1-Fawn.png)
 
-Since we are connected, we begin with the **Port scanning using the Nmap tool**, hoping to find open ports and running services:
+Como estamos conectados, comenzamos con el **escaneo de puertos usando la herramienta Nmap**, con la esperanza de encontrar puertos abiertos y servicios en ejecución:
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/2-Fawn.png)
 
-As you may notice, at the end of the Nmap command, I wrote `-oG fawn-scan`, which saves the scan results in **"grepable" format (grepable output)**. This format is simpler and more compact than the standard output, allowing us to easily **extract specific information**. Here, we run it using the **cat** command. We can see that the status is **"Up"** along with information about the ports and their versions.
+Como podrás notar, al final del comando Nmap escribí `-oG fawn-scan`, que guarda los resultados del escaneo en formato **"grepable" (salida compatible con grep)**. Este formato es más sencillo y compacto que la salida estándar, lo que nos permite **extraer información específica** fácilmente. Aquí, lo ejecutamos usando el comando **cat**. Podemos ver que el estado es **"Up"** junto con información sobre los puertos y sus versiones.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/3-Fawn.png)
 
-`21/open/tcp//ftp/vsftpd 3.0.3/` We can conclude that the only open port is **21**, which runs the **FTP** protocol, and its version is **vsftpd 3.0.3**.
+`21/open/tcp//ftp/vsftpd 3.0.3/` Podemos concluir que el único puerto abierto es el **21**, que ejecuta el protocolo **FTP**, y su versión es **vsftpd 3.0.3**.
 
-## FTP Enumeration
+## Enumeración de FTP
 
-To gather more information about port 21, we’ll perform a scan specifically on this port using the Nmap flag `-sCV`.
+Para recopilar más información sobre el puerto 21, realizaremos un escaneo específico en este puerto utilizando la bandera `-sCV` de Nmap.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/4-Fawn.png)
 
-We see that it says `ftp-anon: Anonymous FTP login allowed`, there is a file named `flag.txt`, and we are on a `UNIX` operating system.
+Vemos que dice `ftp-anon: Anonymous FTP login allowed`, hay un archivo llamado `flag.txt`, y estamos en un sistema operativo `UNIX`.
 
 
    ```
-Anonymous FTP: This is a method that allows entry into an FTP server without needing to authenticate with an account and password. Users connect to the server using the username "anonymous" (or "ftp" in some cases) and any password. 
+Anonymous FTP: Este es un método que permite el acceso a un servidor FTP sin necesidad de autenticarse con una cuenta y contraseña. Los usuarios se conectan al servidor utilizando el nombre de usuario "anonymous" (o "ftp" en algunos casos) y cualquier contraseña.
 ```
 
-
-We connect to the FTP server using the FTP client on the target. For the username, we use **Anonymous**, and for the password, in this case, nothing (press enter). **We successfully connect to the target FTP server**.
+Nos conectamos al servidor FTP usando el cliente FTP en el objetivo. Para el nombre de usuario, usamos **Anonymous**, y para la contraseña, en este caso, nada (presiona enter). **Nos conectamos exitosamente al servidor FTP del objetivo**.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/5-Fawn.png)
 
-## Exploitation phase
+## Fase de explotación
 
-We use the `ls` command to list files or directories.
+Usamos el comando `ls` para listar archivos o directorios.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/6-Fawn.png)
 
-Once we find the `flag.txt` file, we can download it to our local machine. After downloading it, we can exit.
+Una vez que encontramos el archivo `flag.txt`, podemos descargarlo a nuestra máquina local. Después de descargarlo, podemos salir.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/7-Fawn.png)
 
-We go to the directory where the `flag.txt` file was downloaded, and we can open it with the command `cat {filename}`.
+Vamos al directorio donde se descargó el archivo `flag.txt`, y podemos abrirlo con el comando `cat {nombre del archivo}`.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/8-Fawn.png)
 
 <br>
 
-Once we have captured the flag, **we have completed the Fawn machine**.
+Una vez que capturamos la flag, **hemos completado la máquina Fawn**.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/9-Fawn.png)
 
