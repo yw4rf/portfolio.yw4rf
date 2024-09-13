@@ -6,6 +6,7 @@ categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
 
+
 ## Introduction 
 
 In this walkthrough, we'll use Nmap for port scanning to identify open ports and services, focusing on FTP on port 21. We'll enumerate the FTP service, exploit anonymous login, and download the flag.
