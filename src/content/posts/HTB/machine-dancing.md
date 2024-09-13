@@ -52,7 +52,9 @@ La que nos interesa es `-L` ya que nos da una lista de los hosts del objetivo. E
 
 ![Dancing machine yw4rf](../../../assets/HTB/Dancing/dancing-5.png)
 
-Nos mostrara: 
+Nos mostrara los recursos compartidos del host objetivo: 
+
+![Dancing machine yw4rf](../../../assets/HTB/Dancing/dancing-6.png)
 
 ```
 ADMIN$ = Es una carpeta compartida administrativa que proporciona acceso remoto al sistema de archivos de Windows. Es un recurso oculto (los recursos compartidos ocultos suelen tener un signo de dólar $ al final de su nombre) que da acceso a la carpeta Windows o al directorio raíz de Windows en el sistema.
@@ -64,7 +66,6 @@ IPC$ = Es un recurso compartido especial utilizado para compartir canales de com
 WorkShares = Es un nombre genérico que se refiere a recursos compartidos personalizados por los usuarios o la administración del sistema.
 ```
 
-![Dancing machine yw4rf](../../../assets/HTB/Dancing/dancing-6.png)
 
 Intentaremos conectarnos a `ADMIN$`, `C$` y `Workshares`. Dejamos de lado `IPC$` ya que esté no contiene archivos ni información directamente útil, como vimos anteriormente, tiene como objetivo específico la comunicación y no el almacenamiento.
 
