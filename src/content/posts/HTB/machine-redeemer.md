@@ -5,15 +5,19 @@ pubDate: 'Sep 5 2024'
 categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
+## Introduction
+
+![Redeemer machine complete yw4rf](../../../assets/HTB/Redeemer/redeemer-pwnd.png)
+
 ## Enumeration
 
 Realizamos la comprobación de la conexión con la maquina mediante el comando `ping -c 1 10.129.35.56`
 
-![Redeemer machine complete yw4rf](../../../assets/HTB/Redeemer/redeemer-pwnd.png)
+![Redeemer ping yw4rf](../../../assets/HTB/Redeemer/redeemer-1.png)
 
 Luego de verificar la conexión, realizamos un escaneo de servicios y puertos abiertos con **Nmap**
 
-![Redeemer ping yw4rf](../../../assets/HTB/Redeemer/redeemer-1.png)
+![Redeemer scan yw4rf](../../../assets/HTB/Redeemer/redeemer-2.png)
 
 Vemos que tenemos un solo puerto abierto, el cual es `6379 ` que corre el servicio `Redis`
 
@@ -23,7 +27,7 @@ Redis (Remote Dictionary Server) es un almacén de estructuras de datos en memor
 
 En caso de no tener `redis-cli` (Redis Command Line Interface)  instalado en el sistema tendremos que hacerlo. Una vez instalado ejecutaremos `redis-cli --help` para ver que flags nos permite usar
 
-![Redeemer scan yw4rf](../../../assets/HTB/Redeemer/redeemer-2.png)
+![Redeemer yw4rf](../../../assets/HTB/Redeemer/redeemer-3.png)
 
 Como vemos podemos usar `redis-cli -h {target ip}` para conectarnos al redis del objetivo
 
