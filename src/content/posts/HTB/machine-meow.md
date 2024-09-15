@@ -2,7 +2,7 @@
 title: 'Meow - HTB'
 description: "En este write-up, utilizaremos Nmap para escanear puertos e identificar puertos abiertos y servicios, enfocándonos en Telnet en el puerto 23. Enumeraremos, realizaremos ataques de fuerza bruta y descargaremos la flag."
 pubDate: 'Sep 3 2024'
-categories: ['WriteUp', 'HackTheBox', 'CTF']
+categories: ['WriteUp', 'HackTheBox']
 --- 
 
 ## Introducción
