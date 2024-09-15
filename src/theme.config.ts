@@ -59,26 +59,26 @@ export const THEME_CONFIG: App.Locals['config'] = {
   ],
   /** your category name mapping, which the `path` will be shown in the url */
   category_map: [
-    { name: "胡适", path: "hu-shi" },
+    { name: "yw4rf", path: "yw4rf" },
   ],
   /** your comment provider */
   comments: {
     //disqus: {
       //shortname: "yw4rf",
     //},
-    giscus: {
-       repo: 'yw4rf/yw4rf-blog',
-       repoId: 'R_kgDOMjl5Cw',
-       category: 'General',
-       categoryId: 'DIC_kwDOMjl5C84ChpKi',
-       mapping: 'title',
-       strict: '0',
-       reactionsEnabled: '1',
-       emitMetadata: '1',
-       inputPosition: 'top',
-       theme: 'dark',
-       lang: 'en',
-       loading: 'lazy',
-     }
+    //giscus: {
+     //  repo: 'yw4rf/yw4rf-blog',
+     //  repoId: 'R_kgDOMjl5Cw',
+     //  category: 'General',
+     //  categoryId: 'DIC_kwDOMjl5C84ChpKi',
+     //  mapping: 'title',
+     //  strict: '0',
+     //  reactionsEnabled: '1',
+     //  emitMetadata: '1',
+     //  inputPosition: 'top',
+     //  theme: 'dark',
+    //   lang: 'en',
+     //  loading: 'lazy',
+    // }
   }
 }
