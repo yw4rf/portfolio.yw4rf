@@ -2,7 +2,7 @@
 title: 'FirstHacking - DockerLabs'
 description: "En este write-up, haremos la maquina FirstHacking de la plataforma DockerLabs"
 pubDate: 'Sep 5 2024'
-categories: ['WriteUp', 'HackTheBox']
+categories: ['WriteUp', 'DockerLabs']
 --- 
 
 ## Introducción
