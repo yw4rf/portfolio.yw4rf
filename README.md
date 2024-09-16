@@ -5,3 +5,5 @@ https://yw4rf.vercel.app
 
 The theme was created by **Moeyua**.
 Repo link: https://github.com/moeyua/astro-theme-typography
+
+![typograph-og](https://github.com/user-attachments/assets/f856b2af-5bb7-4f98-b78e-44fb650ee09e)
