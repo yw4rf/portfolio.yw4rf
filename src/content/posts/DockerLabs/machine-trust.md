@@ -10,7 +10,10 @@ categories: ['WriteUp', 'DockerLabs']
 DockerLabs es una plataforma gratuita diseñada para la práctica de hacking ético. En esta ocasión, abordaremos la máquina Trust. Encontraremos servicios como HTTP y SSH, los cuales explotaremos mediante fuerza bruta usando Hydra y haremos escalada de privilegios.
 
 ![Trust DockerLabs Yw4rf](../../../assets/DockerLabs/Trust/trust-dockerlabs.png)
-
+~~~
+Platform: DockerLabs
+Level: Very Easy
+~~~
 
 ## Desplegando la máquina
 
