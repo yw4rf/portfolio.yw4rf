@@ -1,6 +1,6 @@
 export const THEME_CONFIG: App.Locals['config'] = {
   /** blog title */
-  title: "大胆に始めよ",
+  title: "トビアス・F",
   /** your name */
   author: "Yw4rf",
   /** website description */
@@ -19,7 +19,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
     },
     {
       name: "linkedin",
-      href: "https://linkedin.com/tobigfioroni",
+      href: "https://linkedin.com/in/yw4rf",
     },
     {
       name: "telegram",
