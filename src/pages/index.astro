@@ -17,28 +17,26 @@ const { translate: t } = Astro.locals
 <div class="lg:mt-0 mt-[-30px] mb-[40px] lg:max-w-2xl">
   <Image src={Gif} alt="Imagen" class="w-full h-auto object-cover"/>
   <br>
-    <p class="text-[17px] opacity-90 font-normal leading-6">Pentester | CTF Player | Cybersecurity Enthusiast | Computer Networks Student</p>
+    <p class="text-[14px] sm:text-[17px] opacity-90 font-normal">Pentester | CTF Player | Cybersecurity Enthusiast | Computer Networks Student</p>
     <div class="text-[#fff] mt-2 opacity-80"> 
       <a class="text-[10px] sm:text-[17px]" href="mailto:tobifgabriel@gmail.com">echo 'dG9iaWZnYWJyaWVsQGdtYWlsLmNvbQ==' | base64 -d
       </a>
   </div>
-  <div class="mt-6 flex gap-x-[18px] text-[13px] opacity-65">
+  <div class="mt-6 flex gap-x-[10px] text-[13px] sm:text-[15px] opacity-65">
     <span class="flex items-center">
       <a href="/about" class="flex items-center text-white">
-        <svg class="size-3 mb-[-5px]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 10.5L21 3m-5 0h5v5m0 6v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
-          <span class="ml-1">About</span>
+      <span class="">About</span>
       </a>
   </span>
   <span class="flex items-center">
     <a href="/works" class="flex items-center text-white">
-      <svg class="size-3 mb-[-5px]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 10.5L21 3m-5 0h5v5m0 6v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
-        <span class="ml-1">Works</span>
+      <span class="">Works</span>
     </a>
 </span> 
   </div>  
   </div>
   <section contain-layout un-flex="~ col gap-7.5">
-    <h2 class="flex items-center mt-[30px] text-[21px] font-bold opacity-75"><svg class="size-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M16 19H3v-2h13zm5-10H3v2h18zM3 5v2h11V5zm14 0v2h4V5zm-6 8v2h10v-2zm-8 0v2h5v-2z"/></svg>Latest posts</h2>
+    <h2 class="flex items-center mt-[30px] text-[21px] font-bold opacity-75"><svg class="size-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M16 19H3v-2h13zm5-10H3v2h18zM3 5v2h11V5zm14 0v2h4V5zm-6 8v2h10v-2zm-8 0v2h5v-2z"/></svg>Latest posts<svg class="size-6 mb-[-2px] ml-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M6.41 6L5 7.41L9.58 12L5 16.59L6.41 18l6-6z"/><path fill="currentColor" d="m13 6l-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"/></svg></h2>
     {
       posts.map((post) => (
         <Post post={post}>
