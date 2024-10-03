@@ -27,7 +27,7 @@ Primero descargamos la máquina de la plataforma de [**DockerLabs**](https://do
 Target IP: 172.17.0.2
 ~~~
 
-Usaremos el comando `pinc -c 1 172.17.0.2` para verificar la conectividad con la máquina. Este utiliza el **ICMP (Protocolo de Control de Mensajes de Internet)**.  `Ping` envía un mensaje de “solicitud de eco” a una `dirección IP` y espera recibir un mensaje de “respuesta de eco” en respuesta. Este proceso nos permite verificar si una máquina en la red es accesible y medir el tiempo que tarda en recibir una respuesta (conocido como latencia). El `ttl=64` por lo que deducimos es una máquina Linux.
+Usaremos el comando `pinc -c 1 172.17.0.2` para verificar la conectividad con la máquina. Este utiliza el **ICMP (Protocolo de Control de Mensajes de Internet)**. `Ping` envía un mensaje de “echo request” a una `dirección IP` y espera recibir un mensaje de “echo response” en respuesta. Este proceso nos permite verificar si una máquina en la red es accesible y medir el tiempo que tarda en recibir una respuesta (conocido como latencia). El `ttl=64` por lo que deducimos es una máquina Linux.
 
 ![WalkingCMS yw4rf](../../../assets/DockerLabs/WalkingCMS/walkingcms2.png)
 
@@ -35,7 +35,7 @@ Una vez verificada la conexión procedemos a hacer un escaneo de puertos y servi
 
 ![WalkingCMS yw4rf](../../../assets/DockerLabs/WalkingCMS/walkingcms3.png)
 
-Vemos que unicamente el **puerto 80/tcp http** está abierto. El puerto 80 HTTP (Hypertext Transfer Protocol) Se utiliza para cargar páginas web y recursos en navegadores. Ambos permiten la comunicación entre un cliente y un servidor.
+Vemos que unicamente el **puerto 80/tcp http** está abierto. El puerto 80 HTTP (Hypertext Transfer Protocol) Se utiliza para cargar páginas web y recursos en navegadores.
 
 Haremos un escaneo mas profundo indicandole a **Nmap** que nos indique las versiones y más informacíon acerca de estos puertos en específico. Usando la flag `-sCV`
 
