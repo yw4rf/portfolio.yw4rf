@@ -1,8 +1,8 @@
 ---
-title: 'Redeemer - HTB'
+title: 'Redeemer - HackTheBox'
 description: "En este write-up, utilizamos Nmap para escanear puertos e identificar servicios abiertos, con enfoque en Redis en el puerto 6379. Procederemos a enumerar el servicio Redis y extraer la flag."
 pubDate: 'Sep 5 2024'
-categories: ['WriteUp', 'HackTheBox']
+categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
 ## Introducción

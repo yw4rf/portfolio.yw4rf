@@ -2,7 +2,7 @@
 title: 'Trust - DockerLabs'
 description: "En esta ocasión, abordaremos la máquina Trust de la plataforma DockerLabs. Encontraremos servicios como http y ssh el cual explotaremos mediante fuerza bruta usando hydra y haremos escalada de privilegios."
 pubDate: 'Sep 17 2024'
-categories: ['WriteUp', 'DockerLabs']
+categories: ['WriteUp', 'DockerLabs', 'CTF']
 --- 
 
 ## Introducción

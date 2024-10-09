@@ -2,7 +2,7 @@
 title: 'Injection - DockerLabs'
 description: "En este WriteUp, abordaremos la máquina Injection de la plataforma DockerLabs. Realizaremos Escaneo de Puertos, Inyección SQL, Acceso a SSH y Escalada de Privilegios."
 pubDate: 'Sep 18 2024'
-categories: ['WriteUp', 'DockerLabs']
+categories: ['WriteUp', 'DockerLabs', 'CTF']
 --- 
 
 ## Introducción

@@ -1,8 +1,8 @@
 ---
-title: 'Fawn - HTB'
+title: 'Fawn - HackTheBox'
 description: "En este write-up, usaremos Nmap para identificar puertos abiertos y servicios, enfocándonos en FTP en el puerto 21. Vamos a enumerar el servicio FTP, explotar el inicio de sesión anónimo y descargar la flag."
 pubDate: 'Sep 4 2024'
-categories: ['WriteUp', 'HackTheBox']
+categories: ['WriteUp', 'HackTheBox', 'CTF']
 --- 
 
 
