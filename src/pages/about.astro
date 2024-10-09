@@ -2,7 +2,7 @@
 import LayoutDefault from "~/layouts/LayoutDefault.astro";
 
 import { Image } from "astro:assets";
-import profileImg from "../assets/images/profile.gif";
+import profileImg from "../assets/images/hacking.gif";
 
 import CTF from "~/components/CTF.astro";
 import Skills from "~/components/Skills.astro";
@@ -11,19 +11,18 @@ import Skills from "~/components/Skills.astro";
 <LayoutDefault>
     <section class="">
         <div class="flex flex-col md:flex-row items-start">
-            <div class="flex-shrink-0 mb-4 md:mb-0 md:w-3/4">
-                <h2 class="text-[34px] font-bold opacity-75 mb-7">WHO AM I</h2>
+            <div class="flex-shrink-0 mb-4 md:mb-0 md:w-2/4">
                 <p class="text-[17px] font-normal leading-6 mb-6 mr-6">
                     I’m Tobias, a 19yo cybersecurity enthusiast based at Argentina. I’ve always been passionate about technology, which led me to pursue a Technical Degree in Computer Networks at UNO University.
   I’m excited to continue learning and growing in this field, while contributing to the cybersecurity community. I’m currently working towards ISC2 CC and CISCO EH certifications.
                 </p>
             </div>
             <div class="flex flex-col md:items-end">
-                <div class="mt-[10px]">
+                <div class="">
                     <Image
                         src={profileImg}
                         alt="Imagen"
-                        class="w-full md:w-[400px] h-auto rounded-md object-cover"
+                        class="w-full h-auto rounded-md object-cover"
                     />
                 </div>
             </div>
