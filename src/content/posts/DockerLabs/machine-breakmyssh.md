@@ -26,7 +26,7 @@ Se descargara una carpeta comprimida. Utilizaremos una herramienta de descompres
 
 ![Yw4rf DockerLabs](../../../assets/DockerLabs/BreakMySSH/breakmyssh1.png)
 
-## Enumeración
+## Scanning (Escaneo)
 
 ~~~
 Target IP: 172.17.0.2
@@ -40,7 +40,7 @@ Una vez verificada la conexión procedemos a hacer un escaneo de puertos y servi
 
 ![Yw4rf DockerLabs](../../../assets/DockerLabs/BreakMySSH/breakmyssh3.png)
 
-### Puerto 22/SSH
+## Enumeration (Enumeración)
 
 Vemos que tenemos abierto el puerto **22/tcp ssh**.  El puerto 22 SSH (Secure Shell) un protocolo de red que permite la conexión segura a sistemas remotos.
 
@@ -71,6 +71,8 @@ Primero en lugar de hacer uso de un diccionario intentaré con credenciales debi
 ![Yw4rf DockerLabs](../../../assets/DockerLabs/BreakMySSH/breakmyssh8.png)
 
 Nos indica que **root** es un usuario valido, ahora con el nombre de usuario podriamos intentar un **ataque de fuerza bruta** para averiguar la contraseña. 
+
+## Exploitation (Explotación)
 
 Usaré la herramienta **Hydra**, con el comando `hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://172.17.0.2` En mi caso, usaré el diccionario [**rockyou.txt**](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt).
 

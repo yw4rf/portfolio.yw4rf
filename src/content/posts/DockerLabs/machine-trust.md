@@ -141,3 +141,9 @@ Para tener una shell de bash interactiva podemos ejecutar el script `script /dev
 Una vez dentro ya hemos obtenido control total del objetivo por ende terminamos la maquina.
 
 ![Trust DockerLabs Yw4rf](../../../assets/DockerLabs/Trust/trust18.png)
+
+## Resumen
+
+La maquina nos presenta dos puertos abiertos, el puerto **80/HTTP** y el puerto **22/SSH**, al ingresar a la web nos dirige a la página default de **Debian**, realizamos un escaneo de directorios y archivos con la herramienta **Gobuster** y encontramos un archivo llamado "**secret.php**" al dirigirnos vemos el mensaje "Hola mario, está web no se puede hackear" asumimos que "**mario**" es un usuario, lo cual nos da paso a intentar un ataque de **Fuerza bruta** con el diccionario rockyou y la herramienta **Hydra** en el servicio **SSH**. Ingresando asi exitosamente y dando paso a escalar privilegios.
+
+<br>

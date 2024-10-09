@@ -76,4 +76,8 @@ Una vez que capturamos la flag, **hemos completado la máquina Fawn**.
 
 ![Fawn hackthebox yw4rf](../../../assets/HTB/Fawn/9-Fawn.png)
 
+## Resumen
+
+La máquina nos presenta el puerto **21/FTP** abierto, realizamos un escaneo más especifico con la flag **-sCV**  lo cual nos informa que el **Anonymous FTP login** está permitido. Lo que nos permite acceder con el user **anonymous** sin necesidad de una contraseña.
+
 <br>

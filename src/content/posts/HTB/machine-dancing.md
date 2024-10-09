@@ -96,3 +96,9 @@ Una vez descargada la flag podriamos abrirla con el comando `cat`
 Ya tendriamos la maquina hecha
 
 ![Dancing machine pwned yw4rf](../../../assets/HTB/Dancing/dancing-last.png)
+
+## Resumen
+
+La máquina nos presenta multiples puertos abiertos, nos centramos en los puertos abiertos **139/NETbios** y **445/SMB** aunque solo usamos el **445/SMB** con **SMBClient**,  ya que nos permitió acceder al servicio **SMB** y obtener información de los recursos compartidos, usuarios y la flag.
+
+<br>

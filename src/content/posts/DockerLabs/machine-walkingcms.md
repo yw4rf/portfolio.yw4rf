@@ -158,3 +158,9 @@ Como vemos, tenemos el `usr/bin/env` por lo que podemos utilizar el binario `en
 ![WalkingCMS yw4rf](../../../assets/DockerLabs/WalkingCMS/walkingcms22.png)
 
 Con `whoami` o `id` verificamos que somos `root` por lo que hemos finalizado la máquina.
+
+## Resumen
+
+La máquina nos presenta un puerto abierto, el puerto **80/HTTP**, realizamos un escaneo de directorios y archivos con la herramienta **Gobuster** y encontramos "**/wordpress**" a lo que deducimos es una página wordpress, la cual es posible ingresar, accedemos a la página y encontramos un post de un autor llamado "**mario**" con un posible usuario encontrado usamos la herramienta **wpscan** para realizar un ataque de **fuerza bruta** al panel de autenticación de wordpress que se encuentra en "**/wp-admin**" una vez accedemos ingresamos a la administración del sitio wordpress y hacemos uso de un **reverse shell** en el **index.php**. Al nosotros ingresar a la ruta donde pusimos la **reverse shell** luego de ponernos en escucha del puerto seleccionado en la reverse shell nos da una **shell interactiva** lo que nos permite controlar el servidor y escalar privilegios
+
+<br>

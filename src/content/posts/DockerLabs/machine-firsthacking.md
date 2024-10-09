@@ -105,3 +105,9 @@ También podríamos utilizar el comando `script /dev/null -c bash`, el cual ejec
 ![Sesión bash](../../../assets/DockerLabs/FirstHacking/firsthacking-15.png)
 
 Una vez dentro, ya hemos obtenido control total y, por ende, damos por concluida la máquina.
+
+## Resumen
+
+La maquina nos presenta el puerto **21/FTP** abierto, hacemos uso de un exploit automatizado, un backdoor command execution el cual explota una vulnerabilidad en vsftpd 2.3.4 el cual al poner una carita **:)** al final del **User** lo cual permite el login sin necesidad de contraseña
+
+<br>

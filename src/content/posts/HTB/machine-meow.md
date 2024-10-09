@@ -91,4 +91,8 @@ Una vez capturada la flag, **hemos completado la máquina Meow**.
 
 ![Flag capturada máquina Meow](../../../assets/HTB/Meow/meow-7.png)
 
+## Resumen
+
+La maquina nos presenta el puerto **23/TELNET** abierto, se hace uso de credenciales debiles para ingresar como root finalizando asi la máquina
+
 <br>

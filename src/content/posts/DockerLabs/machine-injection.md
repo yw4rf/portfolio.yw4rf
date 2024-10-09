@@ -132,3 +132,8 @@ En su lugar, ejecutaremos `usr/bin/env /bin/bash -p`
 
 Una vez dentro ya verificado que somos root hemos obtenido control total del objetivo por ende terminamos la maquina.
 
+## Resumen
+
+La maquina nos presenta dos puertos abiertos, el puerto **80/HTTP** y el puerto **22/SSH**, al ingresar a la web nos encontramos un **Panel de autenticación** vulnerable a **SQLI (Injecciones SQL)**, luego de ingresar correctamente nos muestra el mensaje: "Bienvenido Dylan, has insertado correctamente tu contraseña: KJSDFG789FGSDF78", con un User y una Password ingresamos correctamente al servicio **SSH** dandonos asi la oportunidad de escalar privilegios
+
+<br>
