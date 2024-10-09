@@ -57,12 +57,11 @@ La ingeniería social (social engineering) es una técnica de manipulación util
 
 **Tailgating**: Seguir a alguien autorizado para acceder a áreas restringidas.
 
-![Footprinting Yw4rf](https://www.researchgate.net/publication/332151597/figure/fig1/AS:743607581556740@1554301271699/Social-engineering-attacks.png)
 
 ### Google Hacking
 El Google Hacking, también conocido como "Google Dorking", es una técnica que utiliza consultas avanzadas en el motor de búsqueda de Google para encontrar información específica que no está fácilmente accesible. Esto incluye datos sensibles, archivos expuestos y configuraciones de sistemas.
 
-Utilizan **Operadores de Búsqueda** avanzada, como `filetype:`, `site:`, `intitle:`, y otros, para filtrar resultados. Por ejemplo, `filetype:pdf "confidencial"` buscaría archivos PDF que contengan la palabra "confidencial". [Cheatsheet Google Dorking](https://github.com/chr3st5an/Google-Dorking)
+Utilizan **Operadores de Búsqueda** avanzada, como **filetype:**, **site:**, **intitle:**, y otros, para filtrar resultados. Por ejemplo, **filetype:pdf "confidencial"** buscaría archivos PDF que contengan la palabra "confidencial". [Cheatsheet Google Dorking](https://github.com/chr3st5an/Google-Dorking)
 
 ## Herramientas Comunes
 
