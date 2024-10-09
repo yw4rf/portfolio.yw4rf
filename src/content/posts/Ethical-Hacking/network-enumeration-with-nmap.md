@@ -5,11 +5,12 @@ pubDate: 'Oct 8 2024'
 categories: ['Pentesting', 'EthicalHacking', 'Cybersecurity']
 --- 
 
+> **Disclaimer:** Este artículo está destinado exclusivamente a fines educativos. Escanear redes sin autorización es ilegal y puede tener consecuencias graves. Asegúrate de obtener el permiso adecuado antes de realizar cualquier tipo de escaneo en una red que no te pertenece. No me hago responsable por el uso indebido del mismo.
+
 ## Introducción
 
 La enumeración de redes es un paso crítico en las pruebas de penetración y la seguridad de la red. Una de las herramientas más potentes y versátiles para esta tarea es Nmap (Network Mapper). En este artículo, exploraremos cómo usar Nmap para realizar una enumeración efectiva de redes, descubriendo hosts, servicios y vulnerabilidades.
 
-> **Disclaimer:** Este artículo está destinado exclusivamente a fines educativos. Escanear redes sin autorización es ilegal y puede tener consecuencias graves. Asegúrate de obtener el permiso adecuado antes de realizar cualquier tipo de escaneo en una red que no te pertenece. No me hago responsable por el uso indebido del mismo.
 
 ## ¿Qué es Nmap?
 
@@ -216,7 +217,12 @@ nmap -oJ resultados.json -sn <IP>
 
 <br>
 
-> Referencias: 
- - [Nmap Official Documentation](https://nmap.org/docs.html)
+> Referencias: [Nmap Official Documentation](https://nmap.org/docs.html)
+
+
+## Conclusión
+
+Nmap es una herramienta fundamental en la enumeración de redes y auditorías de seguridad, permitiendo identificar hosts, puertos, servicios y vulnerabilidades de manera eficiente. A través de sus diversas opciones y flags, los usuarios pueden personalizar sus escaneos para obtener la información más relevante mientras minimizan el riesgo de detección. El dominar Nmap, te especial permite fortalecer la seguridad de las redes y contribuir a un entorno digital más seguro.
+
 
 <br>
