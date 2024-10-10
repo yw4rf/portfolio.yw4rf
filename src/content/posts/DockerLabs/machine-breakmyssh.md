@@ -40,13 +40,13 @@ Una vez verificada la conexión procedemos a hacer un escaneo de puertos y servi
 
 ![Yw4rf DockerLabs](../../../assets/DockerLabs/BreakMySSH/breakmyssh3.png)
 
-## Enumeration (Enumeración)
-
 Vemos que tenemos abierto el puerto **22/tcp ssh**.  El puerto 22 SSH (Secure Shell) un protocolo de red que permite la conexión segura a sistemas remotos.
 
 Haremos un escaneo mas profundo indicandole a **Nmap** especifícando el puerto 22 y que nos indique las versiones y más informacíon acerca de este puerto usando la flag `-sCV`
 
 ![Yw4rf DockerLabs](../../../assets/DockerLabs/BreakMySSH/breakmyssh4.png)
+
+## Enumeration (Enumeración)
 
 La versión de **OpenSSH es 7.7**, y se está utilizando el protocolo 2.0. También se muestran las claves públicas **RSA**, **ECDSA** y **ED25519** utilizadas por el servidor SSH. 
 
