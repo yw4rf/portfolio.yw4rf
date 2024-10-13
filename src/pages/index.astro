@@ -14,14 +14,15 @@ const { translate: t } = Astro.locals
 ---
 
 <LayoutDefault>
-<div class="mb-[30px] lg:max-w-2xl">
+<div class="mb-[30px]">
   <Image src={Gif} alt="Imagen" class="w-full h-auto rounded-md object-cover mb-6"/>
-    <p class="text-[16px] sm:text-[17px] font-normal">Pentester | CTF Player | Cybersecurity Enthusiast | Computer Networks Student</p>
-    <div class="text-[#fff] mt-2"> 
+    <p class="text-[17px] mb-2 leading-6 font-normal">Cybersecurity Enthusiast with Hands-on Penetration Testing Experience | CTF Player | Computer Networks Student</p>
+    <div class="text-[#fff] mt-2">
       <a class="text-[10px] sm:text-[17px]" href="mailto:tobifgabriel@gmail.com">echo 'dG9iaWZnYWJyaWVsQGdtYWlsLmNvbQ==' | base64 -d
       </a>
   </div>
-  <div class="mt-4 flex gap-x-[10px] text-[15px] sm:text-[17px]">
+  <div class="mt-4 flex gap-x-2 text-[17px]">
+    <p class="opacity-60">Check out:</p>
     <span class="flex items-center">
       <a href="/about" class="flex items-center text-white">
       <span class="">About</span>
@@ -45,3 +46,4 @@ const { translate: t } = Astro.locals
     <Pagination showLeft={false} showPageCount={false} rightTitle={t('all_posts')} rightUrl={'posts/page/1'} />
   </section>
 </LayoutDefault>
+

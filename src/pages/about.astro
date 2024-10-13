@@ -2,36 +2,42 @@
 import LayoutDefault from "~/layouts/LayoutDefault.astro";
 
 import { Image } from "astro:assets";
-import profileImg from "../assets/images/hacking.gif";
+import aboutImg from "../assets/images/ghost-in-the-shell-2.gif";
 
 import CTF from "~/components/CTF.astro";
 import Skills from "~/components/Skills.astro";
+import Badges from "~/components/Badges.astro"
 ---
 
 <LayoutDefault>
     <section class="">
-        <div class="flex flex-col md:flex-row items-start">
-            <div class="flex-shrink-0 mb-4 md:mb-0 md:w-2/4">
-                <p class="text-[17px] font-normal leading-6 mb-6 mr-6">
+            <div class="">
+                <Image
+                    src={aboutImg}
+                    alt="Imagen"
+                    class="w-full h-auto rounded-md object-cover"
+                />
+            </div>
+            <div class="text-[17px] mt-6">
+                <p class="font-normal leading-6 mb-4">
                     I’m Tobias, a 19yo cybersecurity enthusiast based at Argentina. I’ve always been passionate about technology, which led me to pursue a Technical Degree in Computer Networks at UNO University.
   I’m excited to continue learning and growing in this field, while contributing to the cybersecurity community. I’m currently working towards ISC2 CC and CISCO EH certifications.
                 </p>
-            </div>
-            <div class="flex flex-col md:items-end">
-                <div class="">
-                    <Image
-                        src={profileImg}
-                        alt="Imagen"
-                        class="w-full h-auto rounded-md object-cover"
-                    />
+                <div class="flex gap-x-2 flex-wrap">
+                    <p class="opacity-60">Contact me on:</p>
+                    <a href="https://t.me/yw4rf" target="_blank">Telegram</a>
+                    <a href="https://linkedin.com/in/yw4rf" target="_blank">Linkedin</a>
+                    <a href="mailto:tobifgabriel@gmail.com" target="_blank">Email</a>
                 </div>
-            </div>
-        </div>        
+            </div>      
     </section>
     <section class="mr-0 sm:mr-[20px]">
     <Skills />
 </section>
 <section>
     <CTF />
+</section>
+<section>
+<Badges />
 </section>
 </LayoutDefault>
