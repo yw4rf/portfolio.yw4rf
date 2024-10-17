@@ -1,13 +1,13 @@
 ---
 title: 'Source - TryHackMe'
-description: "En está ocasión, haremos la máquina de TryHackMe llamada Source. Nos encontraremos con el servicio Webmin 1.890 y haremos uso de un Backdoor RCE exploit CVE-2019-15107 para acceder al servicio con privilegios elevados."
-pubDate: 'Oct 14 2024'
+description: "n esta ocasión, abordaremos la máquina Source de la plataforma TryHackMe. Nos encontraremos con el servicio Webmin 1.890 y haremos uso de un Backdoor RCE exploit CVE-2019-15107 para acceder al servicio con privilegios elevados."
+pubDate: 'Oct 15 2024'
 categories: ['WriteUp', 'TryHackMe', 'CTF']
 --- 
 
 ## Introducción
 
-TryHackMe es una plataforma diseñada para la práctica de hacking ético. En esta ocasión, abordaremos la máquina Source. Nos encontraremos con el servicio Webmin 1.890 y haremos uso de un Backdoor RCE exploit CVE-2019-15107 para acceder al servicio con privilegios elevados.
+**[TryHackMe](https://tryhackme.com/p/Yw4rf)** es una plataforma diseñada para la práctica de hacking ético. En esta ocasión, abordaremos la máquina Source. Nos encontraremos con el servicio Webmin 1.890 y haremos uso de un Backdoor RCE exploit CVE-2019-15107 para acceder al servicio con privilegios elevados.
 
 ![Source yw4rf](../../../assets/TryHackMe/source/source-tryhackme.png)
 
@@ -124,6 +124,7 @@ Al estar en escucha con **NetCat** por el **puerto 1777** nos dará acceso la **
 Una vez tenemos acceso verificamos que somos **root** por lo tanto no es necesario escalar privilegios. Hare **tty treatment** para no tener problemas inncesarios y que la shell sea mas comoda a la hora de utilizarla luego de la **reverse shell**.
 
 ![Source yw4rf](../../../assets/TryHackMe/source/source-18.png)
+
 ![Source yw4rf](../../../assets/TryHackMe/source/source-19.png)
 
 Una vez tratada la tty verificamos si somos **root**
@@ -132,7 +133,5 @@ Una vez tratada la tty verificamos si somos **root**
 
 Somos **root** y tenemos control total de la máquina, por lo tanto la hemos finalizado. Restaria encontrar las **flags**.
 
-
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3457906" style='border:none;'></iframe>
 
 <br>

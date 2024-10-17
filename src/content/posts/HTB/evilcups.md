@@ -7,7 +7,7 @@ categories: ['WriteUp', 'HackTheBox', 'CTF']
 
 ## Introducción
 
-HackTheBox es una plataforma diseñada para la práctica de hacking ético. En esta ocasión, abordaremos la máquina EvilCUPS. Nos encontraremos con el servicio CUPS (Common Unix Printing System) y haremos uso de una Vulnerability Chaining lo cual nos permitira obtener RCE (Remote Code Execution) mediante un exploit automatizado.
+**[HackTheBox](https://app.hackthebox.com/profile/2035837)** es una plataforma diseñada para la práctica de hacking ético. En esta ocasión, abordaremos la máquina EvilCUPS. Nos encontraremos con el servicio CUPS (Common Unix Printing System) y haremos uso de una Vulnerability Chaining lo cual nos permitira obtener RCE (Remote Code Execution) mediante un exploit automatizado.
 
 ![EvilCUPS yw4rf](../../../assets/HTB/EvilCUPS/evilcups-hackthebox.png)
 
