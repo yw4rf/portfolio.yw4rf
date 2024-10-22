@@ -2,7 +2,7 @@
 title: 'Dancing - HackTheBox'
 description: "En este write-up, utilizaremos Nmap para escanear puertos e identificar puertos abiertos y servicios, enfocándonos en SMB. Enumeraremos, y descargaremos la flag."
 pubDate: 'Sep 5 2024'
-categories: ['WriteUp', 'HackTheBox', 'CTF']
+categories: ['WriteUp', 'HackTheBox']
 --- 
 
 ## Introducción

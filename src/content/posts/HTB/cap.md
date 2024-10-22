@@ -2,7 +2,7 @@
 title: 'Cap - HackTheBox'
 description: "Realizaremos la máquina Cap de la plataforma HackTheBox. Nos encontraremos con varios puertos: 80/HTTP, 21/FTP y 22/SSH. Utilizaremos Tshark para analizar paquetes de archivos .PCAP, Web fuzzing para descubrir directorios o archivos ocultos y escalaremos privilegios mediante la capabilitie cap_setuid."
 pubDate: 'Oct 20 2024'
-categories: ['WriteUp', 'HackTheBox', 'CTF']
+categories: ['WriteUp', 'HackTheBox']
 --- 
 
 

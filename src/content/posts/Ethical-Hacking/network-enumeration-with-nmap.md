@@ -2,7 +2,7 @@
 title: 'Network Enumeration with Nmap'
 description: "La enumeración de redes es un paso crítico en las pruebas de penetración y la seguridad de la red. Una de las herramientas más potentes y versátiles para esta tarea es Nmap (Network Mapper). En este artículo, exploraremos cómo usar Nmap para realizar una enumeración efectiva de redes, descubriendo hosts, servicios y vulnerabilidades."
 pubDate: 'Oct 8 2024'
-categories: ['Pentesting', 'EthicalHacking', 'Cybersecurity']
+categories: ['EthicalHacking', 'Cybersecurity']
 --- 
 
 > **Disclaimer:** Este artículo está destinado exclusivamente a fines educativos. Escanear redes sin autorización es ilegal y puede tener consecuencias graves. Asegúrate de obtener el permiso adecuado antes de realizar cualquier tipo de escaneo en una red que no te pertenece. No me hago responsable por el uso indebido del mismo.
