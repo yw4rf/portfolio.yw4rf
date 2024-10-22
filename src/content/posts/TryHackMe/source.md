@@ -1,6 +1,6 @@
 ---
 title: 'Source - TryHackMe'
-description: "n esta ocasión, abordaremos la máquina Source de la plataforma TryHackMe. Nos encontraremos con el servicio Webmin 1.890 y haremos uso de un Backdoor RCE exploit CVE-2019-15107 para acceder al servicio con privilegios elevados."
+description: "En esta ocasión, abordaremos la máquina Source de la plataforma TryHackMe. Nos encontraremos con el servicio Webmin 1.890 y haremos uso de un Backdoor RCE exploit CVE-2019-15107 para acceder al servicio con privilegios elevados."
 pubDate: 'Oct 15 2024'
 categories: ['WriteUp', 'TryHackMe', 'CTF']
 --- 
