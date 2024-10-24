@@ -13,26 +13,4 @@ La máquina Chemistry se encuentra actualmente activa en la plataforma de HackTh
 
 **[https://www.hackthebox.com/achievement/machine/2035837/631](https://www.hackthebox.com/achievement/machine/2035837/631)**
 
-
-<p class="container">
-  <label for="password">Escribe la contraseña:</label>
-  <input type="password" id="password" placeholder="this is just decoration, don´t even try it :)">
-  <button>Acceder</button>
-</p>
-
-<style>
-    .container {
-        display: flex;
-        gap: 10px;
-    }
-
-    input {
-        width: 60%;
-        height: 20px;
-        background: #fff;
-        border: #fff;
-        color: #000;
-    }
-</style>
-
 <br>
